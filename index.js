@@ -121,7 +121,7 @@ console.log(`result`, getEvens(numbers));
 function getOdds(numbers) {
   let odd = [];
   for (let i = 0; i < numbers.length; i++) {
-    if (numbers[i] < 6 && !== 4 || 2) odd.push(numbers[i]);
+    if (numbers[i] % 2 === 1) odd.push(numbers[i]);
   }
   return odd;
 }
