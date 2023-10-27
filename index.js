@@ -80,8 +80,19 @@ getMean([1,2,3,4,5])
  * @param {number[]} numbers an array of integers
  * @returns {number} the smallest of the numbers
  */
+/*
+- create variable for min
+create loop to find min
+*/
+
 function getMin(numbers) {
-  
+  let min = numbers[0];
+  for (i = 1; i < numbers.length; i++) {
+    if (numbers [i] < min){
+      min = numbers[i]
+    }
+  }
+  return min;
 }
 
 
@@ -89,22 +100,40 @@ function getMin(numbers) {
  * @param {number[]} numbers an array of integers
  * @returns {number} the largest of the numbers
  */
+//- create variable for max
+// - create loop for largest number
+
 function getMax(numbers) {
-  // TODO
+  let max = number[0];
+  for (i = 1; i < numbers.length; i++) {
+    if (numbers [i] > max){
+      max = numbers[i];
+    }
+  }
+  return max;
 }
+
+
+
 
 /**
  * @param {number[]} numbers an array of integers
  * @returns {number} the range of the numbers (max - min)
  */
 function getRange(numbers) {
-  // TODO
+  return `${getMax(numbers)} - ${getMin(numbers)}`;
 }
 
 /**
  * @param {number[]} numbers an array of integers
  * @returns {number[]} the even numbers in the array
  */
+/* -create function
+- create variable for even numbers
+- create forloop
+- create if statment
+- return even numbers 
+*/
 function getEvens(numbers) {
   let even = [];
   for (let i = 0; i < numbers.length; i++) {
